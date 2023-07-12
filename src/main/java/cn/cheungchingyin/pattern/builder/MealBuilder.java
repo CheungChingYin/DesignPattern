@@ -7,14 +7,24 @@ package cn.cheungchingyin.pattern.builder;
  */
 public class MealBuilder {
 
-    public Meal prepareVegMeal (){
+    /**
+     * 【重点】添加蔬菜汉堡套餐
+     *
+     * @return 订单
+     */
+    public Meal prepareVegMeal() {
         Meal meal = new Meal();
         meal.addItem(new VegBurger());
         meal.addItem(new Coke());
         return meal;
     }
 
-    public Meal prepareNonVegMeal (){
+    /**
+     * 【重点】添加非蔬菜汉堡套餐
+     *
+     * @return 订单
+     */
+    public Meal prepareNonVegMeal() {
         Meal meal = new Meal();
         meal.addItem(new ChickenBurger());
         meal.addItem(new Pepsi());

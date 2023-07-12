@@ -8,5 +8,5 @@ package cn.cheungchingyin.pattern.builder;
  * @Version 1.0
  */
 public interface Packing {
-    public String pack();
+    String pack();
 }

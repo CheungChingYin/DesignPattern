@@ -1,7 +1,8 @@
 package cn.cheungchingyin.pattern.builder;
 
 /**
- *
+ * 瓶子类
+ * 打包类的实现
  *
  * @Author 张正贤
  * @Date 2023/7/7 16:04

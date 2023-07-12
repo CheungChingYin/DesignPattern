@@ -9,9 +9,9 @@ package cn.cheungchingyin.pattern.builder;
  */
 public interface Item {
 
-    public String name();
+    String name();
 
-    public Packing packing();
+    Packing packing();
 
-    public float price();
+    float price();
 }
