@@ -11,6 +11,9 @@ public class Computer implements ComputerPart {
 
     ComputerPart[] parts;
 
+    /**
+     * 【重点】 初始化的时候就将 ComputerPart 数组初始化并复制
+     */
     public Computer(){
         parts = new ComputerPart[] {new Mouse(), new Keyboard(), new Monitor()};
     }
