@@ -1,0 +1,24 @@
+package cn.cheungchingyin.pattern.observer;
+
+/**
+ * 观察者模式 DEMO
+ *
+ * @Author 张正贤
+ * @Date 2023/7/14 17:37
+ * @Version 1.0
+ */
+public class ObserverPatternDemo {
+    public static void main(String[] args) {
+        // 初始化主题对象
+        Subject subject = new Subject();
+        // 【重点】注册观察者,由于会将对象注册进 subject ，所以不提供声明也可以
+        new HexaObserver(subject);
+        new OctalObserver(subject);
+        new BinaryObserver(subject);
+        // 【重点】修改状态的时候会触发注册的观察者
+        System.out.println("First state change: 15");
+        subject.setState(15);
+        System.out.println("Second state change: 10");
+        subject.setState(10);
+    }
+}
